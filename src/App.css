@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700;900&display=swap");
+
+.App {
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-hei {
+  padding: 5.7em 0 0 0;
+  position: relative;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #999;
+  font-size: 0.7rem;
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+}
+
+.top-bar span {
+  padding: 0 0.2em;
+}
+
+.top-bar ul {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar ul li {
+  display: flex;
+  padding: 0 0.6em;
+  font-size: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar ul li:hover {
+  color: #bcbcbc;
+}
+
+/* ************** */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1em 0 0.5em 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo h1 {
+  margin: 0;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  margin-left: auto;
+  color: #333;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links li {
+  margin-left: 1rem;
+}
+
+.links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.links a:hover {
+  color: #24a3b5;
+}
+
+/* ************************ */
+
+.scrollable-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #24a3b5;
+  color: #fff;
+  width: 100%;
+}
+
+.list-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth; /* optional for smooth scrolling */
+  transition: scroll-left 0.5s; /* optional for animating scrolling */
+}
+
+.list-container::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
+}
+
+.scrollable-list ul {
+  display: flex;
+  list-style: none;
+}
+
+.scrollable-list ul li {
+  display: inline-block;
+  padding: 0.5em;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.scrollable-list ul li:hover {
+  background-color: #fff;
+  color: #24a3b5;
+  transition: 0.4s;
+}
+
+.scrollable-list button {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 0.1em;
+  margin: 0;
+}
+
+/* ************************** */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e8f5f9;
+  padding: 2em 0 0 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero .carousel {
+  width: 80%;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 2px 0 6px 0 #b7b7b7;
+}
+
+.shop-now-container {
+  width: 15%;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 2px 0 6px 0 #b7b7b7;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-now-container .shop-now {
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shop-now-container .shop-now img {
+  width: 80%;
+  height: 75%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.shop-now-container .shop-now img:hover {
+  height: 70%;
+  transform: scale(1.1);
+}
+
+.shop-now-container .shop-now-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.2em 1em;
+  font-size: 1rem;
+  transition: font-weight 0.2s;
+}
+
+.shop-now-container .shop-now-btn:hover {
+  font-weight: 600;
+}
+
+.null {
+  display: none;
+}
+
+.carousel-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+
+.carousel-img-container img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ************************ */
+
+.home .deals {
+  width: 97%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.deals h2 {
+  color: #333;
+  margin: 0.5em 0;
+}
+
+.deals .deals-container {
+  background-color: #fff;
+  height: 38vh;
+  box-shadow: 2px 0 6px 0 #b7b7b7;
+  border-radius: 4px;
+}
+
+.deals-container {
+  display: flex;
+}
+
+.deals-container .deals-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: #24a3b5;
+  transition: border 0.5s;
+  padding-top: 1em;
+}
+
+.deals-container .deals-card:hover {
+  border: 1px solid #24a3b5;
+  box-shadow: 0 1px 4px 1px #b7b7b7;
+}
+
+.deals-card img {
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.deals-card img:hover {
+  transform: scale(1.1);
+}
+
+.deals-card .card-desc {
+  width: 80%;
+  color: #8a8a8a;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
+.deals-card .card-desc:hover {
+  text-decoration: underline;
+}
+
+.deals-card .price {
+  width: 80%;
+  text-align: left;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.deals-card .stricked-price {
+  color: #aaa;
+  text-decoration: line-through;
+  padding: 0 0.2em;
+}
+
+.deals-card .offer {
+  color: #24a3b5;
+}
+
+/* ******************************** */
+
+.accounts-tab {
+  background-color: #fff;
+  width: 28vh;
+  height: auto;
+  position: absolute;
+  right: 2em;
+  top: 2.7em;
+  z-index: 10;
+  box-shadow: 0px 2px 10px 2px #b7b7b7;
+  border-radius: 6px;
+  display: none;
+  transition: display 1s;
+}
+
+.login-register {
+  width: 100%;
+  padding: 1.2em 0.5em;
+  background-color: #24a3b5;
+  border-radius: 6px 6px 0 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.accounts-tab ul li {
+  list-style: none;
+  padding: 0.8em 0.5em;
+  color: #474747c0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.accounts-tab ul li:hover {
+  background: #24a4b525;
+  transition: 0.2s;
+}
+
+/* ************************** */
+
+.modal {
+  position: absolute;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  border: none;
+}
+
+.modal-container {
+  background-color: #e3e3e3;
+  width: 70vw;
+  height: 70vh;
+}
+
+/* ************************ */
+
+.footer .top-footer {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  background-color: #ffffff;
+  border-top: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.footer .top-footer-tab {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ************Login************** */
+
+.loginSubmit {
+  background-color: #24a3b5;
+}
+
+/* ********* Media *********** */
+
+@media screen and (max-width: 890px) {
+  .scrollable-list button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .links {
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    width: 150px;
+    height: calc(100vh - 4.5rem);
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: -500px;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+    /* border: 1px solid #333; */
+
+    display: block;
+  }
+
+  .links.active {
+    left: 0;
+    transition: 1s;
+  }
+
+  .links li {
+    margin: 1em 0;
+  }
+
+  .links a {
+    font-size: 1.5rem;
+  }
+
+  .scrollable-list ul li {
+    padding: 0.6em;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .carousel {
+    width: 96%;
+    height: 50vh;
+    margin: 0 auto;
+  }
+
+  .shop-now-container {
+    width: 96%;
+    height: 20vh;
+    margin: 1em auto;
+
+    flex-direction: row;
+  }
+
+  .shop-now-container .shop-now {
+    width: 100%;
+    height: 100%;
+  }
+
+  .shop-now-container .shop-now img {
+    width: 70%;
+    height: 65%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
+}
