@@ -3,27 +3,50 @@
 .App {
   position: relative;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-
-.navbar-hei {
-  padding: 5.7em 0 0 0;
-  position: relative;
-}
-
-.top-bar {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
-  color: #999;
-  font-size: 0.7rem;
-  font-weight: 500;
-  position: fixed;
-  width: 100%;
+  padding: 1em 3em;
+  background-color: #aedefc;
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(70, 70, 70);
+}
+
+.navbar .logo span {
+  font-size: 0.8rem;
+  display: inline-block;
+  transform: translateX(-10px) rotate(-90deg);
+  color: green;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.navbar ul li a {
+  color: rgb(70, 70, 70);
+}
+
+.navbar ul li a:hover {
+  color: black;
+  transition: 0.4s;
 }
 
 .top-bar span {
@@ -176,7 +199,7 @@ nav {
   width: 100%;
   min-height: 100vh;
   background-color: #e8f5f9;
-  padding: 2em 0 0 0;
+  padding: 1em 0 0 0;
 }
 
 .hero {
@@ -280,10 +303,13 @@ nav {
 
 .deals-container {
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .deals-container .deals-card {
   height: 100%;
+  width: 290px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -504,5 +530,14 @@ nav {
     object-position: center;
     border-radius: 4px;
     transition: all 0.5s;
+  }
+  .deals-container .deals-card {
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 0.5em 1em;
   }
 }

@@ -59,7 +59,14 @@ function Home() {
       <div className="deals">
         <h2>Deals of the Day</h2>
         <div className="deals-container list-container" ref={containerRef}>
-          <button onClick={handleScrollLeft}>
+          <button
+            style={{
+              background: "transparent",
+              border: "none",
+              fontSize: "1.4rem",
+            }}
+            onClick={handleScrollLeft}
+          >
             <ChevronLeftIcon />
           </button>
           <Card
@@ -127,8 +134,14 @@ function Home() {
             strickedPrice="849"
             discount="55"
           />
-
-          <button onClick={handleScrollRight}>
+          <button
+            style={{
+              background: "transparent",
+              border: "none",
+              fontSize: "1.4rem",
+            }}
+            onClick={handleScrollRight}
+          >
             <ChevronRightIcon />
           </button>
         </div>

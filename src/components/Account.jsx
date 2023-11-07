@@ -1,19 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Account() {
   return (
-    <div className="navbar-hei">
-      {/* <div className="accounts-tab">
-        <div className="login-register">Login/register</div>
-        <ul>
-          <li>My Orders</li>
-          <li>My Orders</li>
-          <li>My Orders</li>
-          <li>My Orders</li>
-          <li>My Orders</li>
-          <li>My Orders</li>
-        </ul>
-      </div> */}
+    <div>
+      <h2 style={{ display: "block", textAlign: "center" }}>
+        Login to Account
+      </h2>
+      <Link
+        style={{ display: "block", textAlign: "center" }}
+        to="/account/login"
+      >
+        Login
+      </Link>
     </div>
   );
 }

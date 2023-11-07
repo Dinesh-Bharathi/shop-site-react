@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "./Card"; // Import the Card component
+import Card from "../components/Card";
 
 function Wishlist() {
   const [likedCards, setLikedCards] = useState([]);
@@ -11,10 +11,16 @@ function Wishlist() {
 
   return (
     <div>
-      <h1>My Wishlist</h1>
-      {likedCards.map((card, index) => (
-        <Card key={index} {...card} inWishlist />
-      ))}
+      {likedCards.length === 0 ? (
+        <h1>Your Wishlist is empty</h1>
+      ) : (
+        <div>
+          <h1>My Wishlist</h1>
+          {likedCards.map((card, index) => (
+            <Card key={index} {...card} inWishlist={true} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
